@@ -1,0 +1,22 @@
+{% extends 'coder/base.html' %}
+
+
+
+{% block Titulo %} Cursos {% endblock %}
+
+
+{% block contenido %}
+
+<h1> Pagina de Cursos </h1>
+<p> De momento estamos sin cupos disponibles </p>
+
+
+
+    {% for curso in cursos%}
+        <p style="color: red;">{{curso.nombre}}</p>
+    {% endfor %}
+
+    
+{%endblock %}
+    
+    
